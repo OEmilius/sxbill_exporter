@@ -1,5 +1,6 @@
 softX3000 raw CDR prometheus exporter
 
+<img src="./grafana1.png">
 
 ## Usage
 
@@ -28,8 +29,8 @@ scrape_configs:
 	
 	
 ## PromQL examples
-delta(TotalNormCdr[1h])    
-delta(TotalMinutes[1h]) 
+delta(TotalNormCdr[1h])
+delta(TotalMinutes[1h])
 topk(5,rate(FromTgFailCount[1h]))
 rate(LocalNormCount[1h])
 topk(10, rate(ToTgSec[1h]))
